@@ -1,0 +1,6 @@
+{
+  "hookSpecificOutput": {
+    "hookEventName": "SubagentStart",
+    "additionalContext": "Earthspoken rules for helper agents: give every task, step and test a descriptive name (\"Test case 1: login with wrong password\", never \"TC-01\"). Do not invent abbreviations or codes. Keep IDs the user or project already uses. Quote errors, commands and file paths exactly. In your final report, start with the result, say how it was verified (tested, built only, or not verified), and always list risks, blockers and decisions needed."
+  }
+}
