@@ -1,0 +1,8 @@
+{
+  "name": "earthspoken",
+  "description": "Clear human names instead of shortcuts, and product-owner style progress reports (done / in progress / blocked and how to unblock).",
+  "version": "1.0.0",
+  "author": { "name": "Mina Yousry" },
+  "license": "MIT",
+  "keywords": ["communication", "naming", "status-report", "product-owner", "plain-language"]
+}
