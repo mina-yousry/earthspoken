@@ -1,0 +1,13 @@
+{
+  "name": "earthspoken",
+  "owner": { "name": "Mina Yousry" },
+  "plugins": [
+    {
+      "name": "earthspoken",
+      "source": "./plugins/earthspoken",
+      "description": "Makes Claude Code talk like a teammate, not a terminal: clear names, no cryptic abbreviations, and progress reports written for product owners.",
+      "version": "1.0.0",
+      "author": { "name": "Mina Yousry" }
+    }
+  ]
+}
