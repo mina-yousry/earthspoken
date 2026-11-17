@@ -1,8 +1,12 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "earthspoken",
-  "description": "Clear human names instead of shortcuts, and product-owner style progress reports (done / in progress / blocked and how to unblock).",
-  "version": "1.0.0",
-  "author": { "name": "Mina Yousry" },
+  "displayName": "Earthspoken: plain-language status reports",
+  "description": "Clear human names instead of cryptic IDs, and progress reports anyone can read (done, in progress, blocked and how to unblock, risks, decisions needed).",
+  "version": "1.1.0",
+  "author": { "name": "Mina Yousry", "url": "https://github.com/mina-yousry" },
+  "homepage": "https://github.com/mina-yousry/earthspoken",
+  "repository": "https://github.com/mina-yousry/earthspoken",
   "license": "MIT",
   "keywords": ["communication", "naming", "status-report", "product-owner", "plain-language"]
 }
