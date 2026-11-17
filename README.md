@@ -54,6 +54,10 @@ claude plugin marketplace add mina-yousry/earthspoken
 claude plugin install earthspoken@earthspoken
 ```
 
+### Skills-only edition
+
+[`plugins/earthspoken-lite`](plugins/earthspoken-lite) has the same rules and progress report with no hooks. It's the edition submitted to the Claude directory. The rules load when Claude picks up the skill, not at every session start, and helper agents only get them if Claude passes them on. Install one edition, not both.
+
 ## Try it
 
 1. Run `/plugin` and check that **earthspoken** shows as enabled.
@@ -123,6 +127,7 @@ plugins/earthspoken/
   rules/plain-language.md                the naming and brevity rules (about 280 words)
   rules/subagent-context.json            the short version for helper agents
   skills/progress/SKILL.md               the progress report (/earthspoken:progress)
+plugins/earthspoken-lite/                skills-only edition for the Claude directory (no hooks)
 tests/trigger-cases.md                   prompts to check the report triggers correctly
 ```
 

@@ -17,10 +17,14 @@ jobs:
         run: claude plugin validate --strict .
       - name: Validate plugin
         run: claude plugin validate --strict plugins/earthspoken
+      - name: Validate lite plugin
+        run: claude plugin validate --strict plugins/earthspoken-lite
       - name: Check versions match
         run: |
-          a=$(jq -r .version plugins/earthspoken/.claude-plugin/plugin.json)
-          b=$(jq -r '.plugins[0].version' .claude-plugin/marketplace.json)
-          [ "$a" = "$b" ] || { echo "plugin.json $a != marketplace.json $b"; exit 1; }
+          for p in earthspoken earthspoken-lite; do
+            a=$(jq -r .version plugins/$p/.claude-plugin/plugin.json)
+            b=$(jq -r --arg p "$p" '.plugins[] | select(.name == $p) | .version' .claude-plugin/marketplace.json)
+            [ "$a" = "$b" ] || { echo "$p: plugin.json $a != marketplace.json $b"; exit 1; }
+          done
       - name: Check helper-agent context is valid JSON
         run: jq -e .hookSpecificOutput.additionalContext plugins/earthspoken/rules/subagent-context.json

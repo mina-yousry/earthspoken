@@ -2,18 +2,49 @@
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "earthspoken",
   "description": "Plain-language Claude Code: clear names instead of cryptic IDs, and progress reports anyone can read.",
-  "owner": { "name": "Mina Yousry", "url": "https://github.com/mina-yousry" },
+  "owner": {
+    "name": "Mina Yousry",
+    "url": "https://github.com/mina-yousry"
+  },
   "plugins": [
     {
       "name": "earthspoken",
       "source": "./plugins/earthspoken",
       "description": "Makes Claude Code talk like a teammate, not a terminal: clear names, no invented abbreviations, and progress reports a product owner can read in ten seconds.",
       "version": "1.1.0",
-      "author": { "name": "Mina Yousry" },
+      "author": {
+        "name": "Mina Yousry"
+      },
       "homepage": "https://github.com/mina-yousry/earthspoken",
       "repository": "https://github.com/mina-yousry/earthspoken",
       "license": "MIT",
-      "keywords": ["communication", "naming", "status-report", "product-owner", "plain-language"],
+      "keywords": [
+        "communication",
+        "naming",
+        "status-report",
+        "product-owner",
+        "plain-language"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "earthspoken-lite",
+      "source": "./plugins/earthspoken-lite",
+      "description": "Skills-only edition of Earthspoken (no hooks): clear names and progress reports anyone can read, loaded when Claude picks up the skill.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Mina Yousry"
+      },
+      "homepage": "https://github.com/mina-yousry/earthspoken",
+      "repository": "https://github.com/mina-yousry/earthspoken",
+      "license": "MIT",
+      "keywords": [
+        "communication",
+        "naming",
+        "status-report",
+        "product-owner",
+        "plain-language"
+      ],
       "category": "productivity"
     }
   ]
