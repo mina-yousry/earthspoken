@@ -3,7 +3,7 @@
   "name": "earthspoken-lite",
   "displayName": "Earthspoken Lite: plain-language status reports",
   "description": "Clear human names instead of cryptic IDs, focus on the main task with side work parked instead of dropped, and progress reports anyone can read (done, in progress, blocked and how to unblock, risks, decisions needed). Skills only, no hooks.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Mina Yousry",
     "url": "https://github.com/mina-yousry"
@@ -11,7 +11,6 @@
   "homepage": "https://github.com/mina-yousry/earthspoken",
   "repository": "https://github.com/mina-yousry/earthspoken",
   "license": "MIT",
-  "icon": ".claude-plugin/icon.png",
   "keywords": [
     "communication",
     "naming",

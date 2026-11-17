@@ -1,5 +1,9 @@
 # Changelog
 
+## earthspoken-lite 1.1.1 (2026-11-17)
+
+- Removed the `icon` field from `plugin.json`. Strict validation in CI rejected it as an unknown field. The icon still ships at `.claude-plugin/icon.png`, where the directory finds it.
+
 ## 1.2.0, and earthspoken-lite 1.1.0 (2026-11-17)
 
 - New `focus` skill (`/earthspoken:focus`): keeps one main goal in view, parks side tasks on a Parked list instead of chasing or dropping them, and returns to the main goal after every detour. Nothing is discarded; you decide what gets dropped.
