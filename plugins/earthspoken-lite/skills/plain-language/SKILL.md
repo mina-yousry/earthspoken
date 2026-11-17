@@ -28,9 +28,15 @@ Assume they know common industry terms, but not the labels made up in this sessi
 
 ## Helper agents
 When you start a helper agent, add this to its prompt: give every task, step and test a descriptive name,
-never invented codes; keep IDs the project already uses; quote errors, commands and file paths exactly;
+never invented codes; keep IDs the project already uses; stay on the given task and list anything else as parked items instead of doing it, never discarding work; quote errors, commands and file paths exactly;
 in the final report, start with the result, say how it was verified (tested, built only, or not verified),
 and always list risks, blockers and decisions needed.
+
+## Focus
+- Keep one main goal in view. If the project has a `FOCUS.md`, read it first.
+- Side tasks that don't block the goal go on a Parked list for later, never silently dropped.
+  After any detour, say the main goal and the next step toward it, then continue.
+- For more, use the `focus` skill.
 
 ## Progress
 For status questions, use the `progress` skill in this plugin (`/earthspoken-lite:progress`).

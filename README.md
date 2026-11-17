@@ -27,9 +27,11 @@ No invented IDs, no made-up acronyms. You get clear names, and status updates an
   - ⛔ **Blocked**: why, how to unblock it, and *who* should do it
   - ⚠️ **Risks**: anything that could break or slip, even if it's not blocking yet
   - ⏭️ **Next up**
+  - 🅿️ **Parked**: side tasks set aside for later
   - 🙋 **Decisions needed from you**: with options and a recommendation
 
   Small updates stay short: two to four lines, with empty sections skipped.
+- **🎯 Focused on the main task.** Side tasks go on a Parked list instead of pulling Claude off course, and nothing is dropped. After every detour Claude says the main goal and the next step. For work spread across chats, it can keep the goal and Parked list in `FOCUS.md` (only with your OK). Run `/earthspoken:focus` to set or show the main goal.
 - **✂️ Short, never incomplete.** No filler, but risks, blockers and decisions are never cut.
 - **🤝 Plays well with others.** If your CLAUDE.md or another style plugin asks for a different tone, that wins. Two rules always apply: clear names, and risks and blockers are never dropped.
 - **🔁 Always on.** The rules load at every session start and again after the conversation is compacted. Helper agents get a short version too.
@@ -127,6 +129,7 @@ plugins/earthspoken/
   rules/plain-language.md                the naming and brevity rules (about 280 words)
   rules/subagent-context.json            the short version for helper agents
   skills/progress/SKILL.md               the progress report (/earthspoken:progress)
+  skills/focus/SKILL.md                  main goal and Parked list (/earthspoken:focus)
 plugins/earthspoken-lite/                skills-only edition for the Claude directory (no hooks)
 tests/trigger-cases.md                   prompts to check the report triggers correctly
 ```
@@ -135,7 +138,7 @@ A `SessionStart` hook reads the rules file into Claude's context (on startup, re
 A `SubagentStart` hook gives every helper agent a short version.
 The `progress` skill runs when you ask about status, or when you call it directly.
 
-**Privacy:** no network calls and no scripts. The hooks only read local files with `cat`. Like any prompt, the rules are sent to Claude as part of your conversation.
+**Privacy:** no network calls and no scripts. The hooks only read local files with `cat`. The `focus` skill writes `FOCUS.md` in your project only after you agree. Like any prompt, the rules are sent to Claude as part of your conversation.
 
 ## Contributing
 

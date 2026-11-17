@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.0, and earthspoken-lite 1.1.0 (2026-11-17)
+
+- New `focus` skill (`/earthspoken:focus`): keeps one main goal in view, parks side tasks on a Parked list instead of chasing or dropping them, and returns to the main goal after every detour. Nothing is discarded; you decide what gets dropped.
+- Work spread across chats: with your OK, keeps the main goal, current step and Parked list in `FOCUS.md` so the next chat starts from the same place.
+- Rules and helper agents: helpers stay on their given task and report side issues as parked items.
+- Progress report starts with the main goal and adds a Parked section.
+
 ## earthspoken-lite 1.0.0 (2026-11-17)
 
 - New skills-only edition in `plugins/earthspoken-lite`, for the Claude directory, which accepts hooks only from Verified organizations.

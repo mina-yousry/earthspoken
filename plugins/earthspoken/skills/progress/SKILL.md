@@ -17,7 +17,7 @@ For small or single-task work, give two to four lines and skip empty sections,
 but always say if something is blocked or a decision is needed.
 
 ## Overall
-One or two sentences: are we on track, and what is the most important thing to know?
+Start with the main goal in one line (from `FOCUS.md` if there is one), then one or two sentences: are we on track, and what is the most important thing to know?
 If there was an earlier report, start with what changed since then.
 
 ## ✅ Done
@@ -39,7 +39,10 @@ If nothing is blocked, write "Nothing is blocked."
 - Anything that could break, slip or cost more, even if it is not blocking yet.
 
 ## ⏭️ Next up
-- The next few items, in order.
+- The next few items toward the main goal, in order.
+
+## 🅿️ Parked
+- Side tasks set aside for later, each with one line of context. Skip if none.
 
 ## 🙋 Decisions needed from you
 - Questions only the user can answer, each with the options and a recommendation.

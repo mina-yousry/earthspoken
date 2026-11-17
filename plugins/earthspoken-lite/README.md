@@ -17,7 +17,8 @@ In Claude Code:
 ## What it does
 
 - **`plain-language` skill:** clear names for tasks, plan steps, helper agents and tests. Keeps the IDs your project already uses and follows your repo's branch and commit conventions. Short, but never drops risks, blockers or decisions needed. Your own CLAUDE.md or style instructions win on tone.
-- **`progress` skill:** ask "where are we?" or run `/earthspoken-lite:progress` (optionally with a focus area) for a short report: Done (and how it was verified), In progress, Blocked (and who can unblock it), Risks, Next up, Decisions needed from you.
+- **`focus` skill:** keeps Claude on the main task. Side tasks go on a Parked list instead of being chased or dropped, and Claude returns to the main goal after every detour. For work spread across chats, it can keep the goal and Parked list in `FOCUS.md`, only with your OK. Run `/earthspoken-lite:focus` to set or show the main goal.
+- **`progress` skill:** ask "where are we?" or run `/earthspoken-lite:progress` (optionally with a focus area) for a short report: Done (and how it was verified), In progress, Blocked (and who can unblock it), Risks, Next up, Parked, Decisions needed from you.
 
 ## Want the rules always on?
 
@@ -32,7 +33,7 @@ Install only one of the two editions.
 
 ## Privacy and data
 
-No network calls, no scripts, no hooks, and no data stored. The plugin is Markdown instructions only. Like any prompt, the instructions are sent to Claude as part of your conversation.
+No network calls, no scripts, no hooks. Nothing is stored, except `FOCUS.md` in your project if you agree to it. The plugin is Markdown instructions only. Like any prompt, the instructions are sent to Claude as part of your conversation.
 
 ## License
 

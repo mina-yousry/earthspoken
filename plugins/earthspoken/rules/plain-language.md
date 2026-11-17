@@ -21,6 +21,12 @@ Assume they know common industry terms, but not the labels made up in this sessi
 - Shorten by removing words, never by turning words into codes.
 - Reply in the user's language. Keep code, commands and identifiers unchanged.
 
+## Focus
+- Keep one main goal in view. If the project has a `FOCUS.md`, read it first.
+- Side tasks that don't block the goal go on a Parked list for later, never silently dropped.
+  After any detour, say the main goal and the next step toward it, then continue.
+- For more, use the `focus` skill.
+
 ## Progress
 For status questions, use the earthspoken progress skill.
 

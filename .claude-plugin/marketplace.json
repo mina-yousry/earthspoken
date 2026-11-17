@@ -11,7 +11,7 @@
       "name": "earthspoken",
       "source": "./plugins/earthspoken",
       "description": "Makes Claude Code talk like a teammate, not a terminal: clear names, no invented abbreviations, and progress reports a product owner can read in ten seconds.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "Mina Yousry"
       },
@@ -31,7 +31,7 @@
       "name": "earthspoken-lite",
       "source": "./plugins/earthspoken-lite",
       "description": "Skills-only edition of Earthspoken (no hooks): clear names and progress reports anyone can read, loaded when Claude picks up the skill.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Mina Yousry"
       },

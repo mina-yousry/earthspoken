@@ -2,12 +2,22 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "earthspoken-lite",
   "displayName": "Earthspoken Lite: plain-language status reports",
-  "description": "Clear human names instead of cryptic IDs, and progress reports anyone can read (done, in progress, blocked and how to unblock, risks, decisions needed). Skills only, no hooks.",
-  "version": "1.0.0",
-  "author": { "name": "Mina Yousry", "url": "https://github.com/mina-yousry" },
+  "description": "Clear human names instead of cryptic IDs, focus on the main task with side work parked instead of dropped, and progress reports anyone can read (done, in progress, blocked and how to unblock, risks, decisions needed). Skills only, no hooks.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Mina Yousry",
+    "url": "https://github.com/mina-yousry"
+  },
   "homepage": "https://github.com/mina-yousry/earthspoken",
   "repository": "https://github.com/mina-yousry/earthspoken",
   "license": "MIT",
   "icon": ".claude-plugin/icon.png",
-  "keywords": ["communication", "naming", "status-report", "product-owner", "plain-language"]
+  "keywords": [
+    "communication",
+    "naming",
+    "status-report",
+    "product-owner",
+    "plain-language",
+    "focus"
+  ]
 }
